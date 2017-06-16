@@ -24961,10 +24961,10 @@
 	          { className: 'header' },
 	          _react2.default.createElement(
 	            'ul',
-	            null,
+	            { className: 'ulForMeny' },
 	            _react2.default.createElement(
 	              'li',
-	              null,
+	              { className: 'liForMeny' },
 	              _react2.default.createElement(
 	                _reactRouter.Link,
 	                { to: "/" },
@@ -24973,7 +24973,7 @@
 	            ),
 	            _react2.default.createElement(
 	              'li',
-	              null,
+	              { className: 'liForMeny' },
 	              _react2.default.createElement(
 	                _reactRouter.Link,
 	                { to: "/Values" },
@@ -24982,7 +24982,7 @@
 	            ),
 	            _react2.default.createElement(
 	              'li',
-	              null,
+	              { className: 'liForMeny' },
 	              _react2.default.createElement(
 	                _reactRouter.Link,
 	                { to: "/IT" },
@@ -24991,7 +24991,7 @@
 	            ),
 	            _react2.default.createElement(
 	              'li',
-	              null,
+	              { className: 'liForMeny' },
 	              _react2.default.createElement(
 	                _reactRouter.Link,
 	                { to: "/Foto" },
@@ -25040,6 +25040,8 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactRouter = __webpack_require__(160);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25068,10 +25070,50 @@
 	          null,
 	          this.props.children
 	        ),
+	        _react2.default.createElement('p', null),
 	        _react2.default.createElement(
-	          'footer',
-	          null,
-	          '\u0422\u0443\u0442 \u043C\u043E\u0436\u0435\u0442 \u0431\u044B\u0442\u044C \u0412\u0430\u0448\u0430 \u0440\u0435\u043A\u043B\u0430\u043C\u0430!'
+	          'div',
+	          { className: 'footer' },
+	          _react2.default.createElement(
+	            'ul',
+	            { className: 'liForMeny' },
+	            _react2.default.createElement(
+	              'li',
+	              { className: 'liForMeny' },
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: "/" },
+	                'Home'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { className: 'liForMeny' },
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: "/Values" },
+	                'Values'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { className: 'liForMeny' },
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: "/IT" },
+	                'IT'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { className: 'liForMeny' },
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: "/Foto" },
+	                'Foto'
+	              )
+	            )
+	          )
 	        )
 	      );
 	    }

@@ -73,22 +73,31 @@ a:active {
   height: 35px;
 }
 
+.footer {
+  width: 100%;
+  border-top: 1px solid black;
+  height: 35px;
+}
+
 li {
   width: auto;
   margin: 0 20px;
-  float: left;
+}
+
+li::after{
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 
 ul {
   list-style-type: none;
 }
 
-li::after{
-content: ".";
-display: block;
-height: 0;
-clear: both;
-visibility: hidden;
+.liForMeny {
+float: left;
 }
 
 .app {
@@ -108,21 +117,21 @@ main {
 }
 
 .mainBox{
-  width: 990px;
+  width: auto;
   height: auto;
-  margin: auto;
+  margin: 5px;
+  display: table-cell;
+  vertical-align: middle;
 }
 
-.card{
-  width: 280px;
-  height: 665px;
-  margin: auto;
-  margin: 15px;
-  float: left;
-  padding: 5px;
-  background: #F7FFF7;
+/*.card{
+  width: auto;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: 10px;
   border: 4px outset #2F3061;
-}
+  float: none;
+}*/
 
 .img1{
   margin-left: 45px;

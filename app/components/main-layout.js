@@ -6,11 +6,11 @@ export default class MainLayout extends Component {
     return(
       <div className="container">
         <div className="header">
-            <ul>
-              <li><Link to={"/"}>Home</Link></li>
-              <li><Link to={"/Values"}>Values</Link></li>
-              <li><Link to={"/IT"}>IT</Link></li>
-              <li><Link to={"/Foto"}>Foto</Link></li>
+            <ul className="ulForMeny">
+              <li className="liForMeny"><Link to={"/"}>Home</Link></li>
+              <li className="liForMeny"><Link to={"/Values"}>Values</Link></li>
+              <li className="liForMeny"><Link to={"/IT"}>IT</Link></li>
+              <li className="liForMeny"><Link to={"/Foto"}>Foto</Link></li>
             </ul>
         </div>
         <div className="boxForKuts">
